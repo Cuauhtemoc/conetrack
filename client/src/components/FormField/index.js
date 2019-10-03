@@ -1,11 +1,15 @@
 import React from 'react'
 
-function Form (props){
+function FormField (props){
     return (
         <div>
-            
+            {props.inputLabel} <br></br>
+            <input 
+            type={props.inputType} name={props.inputName}>
+            </input>
         </div>
+
     )
 }
 
-export default Form;
+export default FormField;
